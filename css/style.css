@@ -1,0 +1,84 @@
+body {
+    margin:1rem 2rem
+}
+
+.lorem {
+    margin:2rem 0rem
+    }
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.5);
+}
+  
+.modal__container {
+    position: relative;
+    background-color: rgb(255,255,255);
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 30rem;
+    animation-name: fadein;
+    animation-duration: 1.5s
+}
+    
+@keyframes fadein {
+    from {opacity:0}
+    to {opacity:1}
+}
+  
+  
+.modal__header {
+    padding: 0.5rem 1rem;
+    background-color: rgb(255,255,255);
+    color: rgb(0,0,0);
+}
+  
+.modal__body {padding: 0rem 1rem 1rem 1rem;}
+  
+.modal__footer {
+    display:flex;
+    padding:  0.5rem 1rem;
+    background-color: rgb(255,255,255);
+    color: rgb(0,0,0);
+}
+
+.button__container {
+    margin-left: auto;
+    margin-bottom: 1rem;
+}
+
+.button__okey{
+    display:inline-block;
+    padding: 0.5rem 1.5rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(29, 161, 40);
+}
+
+.button__cancel{
+    display:inline-block;
+    padding: 0.5rem 1.5rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(231, 12, 30);
+}
+
+.button__okey:hover,
+.button__okey:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button__cancel:hover,
+.button__cancel:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
